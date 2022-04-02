@@ -71,15 +71,15 @@
     time.textContent = `${timer}`;
     if(timer === 0){
       mask[1].classList.remove('hidden');
-      if(scorePoint > 30){
+      if(scorePoint > 40){
         firstImage.src = 'img/yuusya.png';
         secondImage.src = 'img/A.png';
         rank = '伝説の勇者';
-      } else if(scorePoint > 20){
+      } else if(scorePoint > 30){
         firstImage.src = 'img/knight.png';
         secondImage.src = 'img/B.png';
         rank = '歴戦の騎士';
-      } else if(scorePoint > 10){
+      } else if(scorePoint > 15){
         firstImage.src = 'img/heitai.png';
         secondImage.src = 'img/C.png';
         rank = '一般兵士';
