@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>もぐらたたきゲーム</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="mask">
+    <h1 class="title"><img src="img/Title.png" alt=""></h1>
+    <p id="start">Game Start</p>
+  </div>
+
+  <div class="mask hidden">
+    <h1 class="end">しゅ～りょ～!!</h1>
+  </div>
+
+  <div class="mask hidden">
+    <h1 class="result">RESULT</h1>
+    <div>
+      <span><img class="clear" id="img-a" src="" alt=""></span>
+      <span><img id="img-b" src="" alt=""></span>
+    </div>
+    <h2 class="clear" id="result"></h2>
+    <p id="reStart">To Be Continued?</p>
+  </div>
+
+  <div class="container">
+    <div class="stage">
+      <img src="img/main01.png" alt="">
+      <img class="z-a" src="img/main02.png" alt="">
+      <img class="z-b" src="img/main03.png" alt="">
+      <img class="z-c" src="img/main04.png" alt="">
+      <div class="hole">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole z-a">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole z-a">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole z-a">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole z-b">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole z-b">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+      <div class="hole z-b">
+        <img class="mole" src="img/mole02.PNG" alt="" width="96" height="96">
+      </div>
+    </div>
+    <div class="data">
+      <p id="score">score : 0</p>
+      <p id="time">60</p>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
