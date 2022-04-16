@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <title>もぐらたたきゲーム</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +11,12 @@
   <div class="mask">
     <h1 class="title"><img src="img/Title.png" alt=""></h1>
     <p id="start">Game Start</p>
+    <small>※音楽が流れるかもしれません。<br>音量にご注意ください。</small>
   </div>
+
+  <audio id="sound" preload="auto">
+    <source src="mp3/carmen.mp3">
+  </audio>
 
   <div class="mask hidden">
     <h1 class="end">しゅ～りょ～!!</h1>

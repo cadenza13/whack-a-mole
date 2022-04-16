@@ -10,9 +10,22 @@
   const result = document.getElementById('result');
   const firstImage = document.getElementById('img-a');
   const secondImage = document.getElementById('img-b');
+  const sound = document.getElementById('sound');
+  let isSound = false;
   let scorePoint = 0;
   let timer = 60;
   let rank;
+
+  function bgm(){
+    if(isSound === true){
+      sound.pause();
+      sound.currentTime = 0;
+      isSound = false;
+    } else{
+      sound.play();
+      isSound = true;
+    } 
+  }
 
   function moleUp(){
     const n = Math.floor(Math.random() * moles.length);
@@ -89,6 +102,7 @@
         rank = '普通の人';
       }
       setTimeout(resultScreen, 3000);
+      bgm();
       return;
     }
     setTimeout(countTimer, 1000);
@@ -110,6 +124,7 @@
     mask[0].classList.add('hidden');
     setTimeout(moleUp, 2000);
     setTimeout(countTimer, 1000);
+    bgm();
   });
 
   reStart.addEventListener('click', () =>{
@@ -123,5 +138,6 @@
     moleDown();
     setTimeout(moleUp, 2000);
     setTimeout(countTimer, 1000);
+    bgm();
   });
 }
